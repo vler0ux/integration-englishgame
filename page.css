@@ -1,4 +1,24 @@
+* {
+    border: 1px solid red;
+}
+
 h1{
-    color:aquamarine;
+    color:black;
     background-color: aqua;
 }
+.top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.top-section-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    display: flex;
+    justify-content:flex-end ;
+  }
