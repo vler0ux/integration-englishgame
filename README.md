@@ -8,6 +8,14 @@
 *moyen et outils :*  
 
 création d'un compte gitUb et double authentification du compte via ce lien
-[lien GitHub](https://github.com/), puis création d'une clé SSH, nous avons plusieurs site, voici un [lien en exemple](https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) et nous utiliserons ce cette ligne de commande `ssh-keygen -t ed25519 -C "your_email@example.com"`
+[lien GitHub](https://github.com/), puis création d'une clé SSH, nous avons plusieurs site, voici un [lien en exemple](https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) et nous utiliserons cette ligne de commande `ssh-keygen -t ed25519 -C "your_email@example.com"` pour la générer.
+
+## Logiciel à intaller :
+
+- [x] VS code
+- [x] Linux
+
+
+Nous travaillons sur VScode pour réaliser la page. Pour que la travail soit fluide, nous utilisons Linux, un OS open source. Les bases sur les lignes de commande sont à connaitre que nous pouvons trouver [ici](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cdn.hostinger.com/tutorials/pdf/Linux-Commands-Cheatsheet-FR.pdf). Thomas notre formateur nous préconise de les utiliser régulièrement pour se les approprier.
 
 Nous devons repliquer cette page :  ![cette page](./Screenshot.jpg)
