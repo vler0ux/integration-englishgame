@@ -37,11 +37,18 @@ pour réaliser la page, nous utilisons VS Code
 2. *ajouter les collaborateurs* dans GitHub, les validations seront à faire probablement via un email qu'on reçoit sur son adresse mail github. On pourra _regler les rules_ : Restrict deletions, Require linear history, Require a pull request before merging (mettre aux moins 2 personnes de l'équipe), Block force pushes. 
 3. Dans le terminal, créer un dossier qui sera eligible à _git_ via un `git.init`qui crée un dépot GIT dans le dossier où on se trouve.
 4. On travaille sur ses pages en faisant régulièrement 2 commandes :
-    - `git add .`ajoute les fichiers contenu dans le dossier vers la branche local
+    - `git add .`ajoute les fichiers en *stage*
     - `git commit -m "message"` qui nous permettrons de voir l'avancement des travaux sur la page lorsque celle ci sera sur **_origine_**
 5. on veut partager notre travail le _repository_ (créé en étape 1), on reprend la commande que l'on trouve dans le gitHub, dans le *_repository_*
     - par exemple : `git remote add origin git@github.com:vler0ux/test.git` 
 6. On tape la commande `git push -u origin main` (équivalence `git push -u origin main`) cette commande va nous permettre de pusher sur **_origine_**. Par la suite, on pourra taper uniquement `git push`
+
+##_ Les habitudes de travail
+1. Vérifier qu'on est bien dans un git repository.
+2. Vérifier sur quel branche on travail. commande pour changer de branche `git checkout nom-de-la-branche`
+3. Dès que le travail est avancé, monter en stage, commande `git add .`
+4. enregistrer en local, commande `git commit -m "message"` 
+5. enregistrer sur originie, commande `git push`
 
 ## autres choses à faire ?
 - il est important d'ecrire son README.md (attention l'orthographe et les majuscules sont importantes). Ce fichier va reprendre tout ce qu'il faut savoir sur tes pages. Le texte se fait en **_Markdown_**.
@@ -50,14 +57,16 @@ pour réaliser la page, nous utilisons VS Code
 
 
 *_les commandes à savoir :_*
-
+- `mkdir` crée un dossier
+- `touch` crée un fichier
 - `git push` envoie les modifications local à la branche origine
 - `git pull` envoie les modifications de origine vers la branche local/main
 - `git clone` clone les depots git
-- `git status`affiche la liste des fichiers dans le terminal
+- `git status`montre sur quelle branche on est
+- `git ls` montre les fichier du dossier/dossiers où on se trouve
 - `git log`montre les dernier commit qu'on a effectué
 - `git stash`mettre de coté notre travail sans le commit
-- `git commit -- amend`
+- `git commit -- amend`permet de modifier le dernier commit 
 - `git revert`
 - `git reset`
 
@@ -68,8 +77,11 @@ la commande qu'il faut  `git checkout -b nom-de-la-nouvelle-branche` .
 2. on pourra faire un `git rebase` pour lier la branche soeur sur la branche locale
 3. ne pas oublier de refaire un `git push` pour mettre à jour l'ensemble de la branche
 
-## Faire une *Pull Request*
-Quand notre branche enfant est dans orgine, il n'est pas judicieux de la fusionner directement avec la branche main, cela pourrait causer des interferences (rapelle des *rules* mis en place + haut). La branche est en *PR* et de nombreuses *request* sont en cours de validation, dès que toutes (ou les ppx) sont validés, on va pouvoir *merge la PR* avec cette commande `git merge nom-de-la-branche-enfant`
+## *Pull Request* et merger sa branche 
+La <ins>*_pull request_*</ins> permet de signaler qu'on a terminé les modificationss de sa branche et qu'<ins>on est prêt à l'intégrer dans la *branche main*</ins>.  
+Avant cette étape, pour s'assurer de la **_qualité du code_** et **_éviter des bugs_** sur la branche principale, des **_code review_** sont fait par des developpeurs désignés. Selon les règles fixées au préalable, il faut que <ins>certains developpeurs désignés valident les PR (*Pull Request*)</ins>, pour que je puisse "merger" ma branche sur la branche main.  
+Cela peut prendre du temps et il y aura tout un historique de *request*. 
+Dès que toutes ces étapes sont validées, alors, on va pouvoir **_merger la branche_** avec cette commande `git merge nom-de-la-branche-enfant`
 
 
 
