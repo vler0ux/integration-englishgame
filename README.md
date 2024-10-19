@@ -67,8 +67,9 @@ pour réaliser la page, nous utilisons VS Code
 - `git log`montre les dernier commit qu'on a effectué
 - `git stash`mettre de coté notre travail sans le commit
 - `git commit -- amend`permet de modifier le dernier commit 
-- `git revert`
-- `git reset`
+- `git revert copie-du-lien-du-commit`est utilisée pour annuler un commit spécifique en créant un nouveau commit qui inverse les changements du commit à annuler, tout en préservant l'historique Git.
+- `git reset copie-du-lien-du-commit`st utilisée pour supprimer ou déplacer des commits dans l’historique. Il modifie l’état de la branche locale. Les commits qui se trouvent en "sandwich" seront perdus définitivement.   
+**_->_** pour trouver le lien d'un commit, il faut faire un `git log` 
 
 ## *_Inserer une branche soeur_*
 la commande qu'il faut  `git checkout -b nom-de-la-nouvelle-branche` . 
