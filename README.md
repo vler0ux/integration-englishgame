@@ -35,7 +35,7 @@ pour réaliser la page, nous utilisons VS Code
 ## Quels sont les étapes pour travailler ensemble sur un dossier ?
 1. Sur ton compte GitHub, créer un _repository_ de préférence en _public_ pour que l'équipe y ait accès. **_Pour choisir ton nom de dossier surtout pas de Majuscule, pas d'accent, pas d'espace_**
 2. *ajouter les collaborateurs* dans GitHub, les validations seront à faire probablement via un email qu'on reçoit sur son adresse mail github. On pourra _regler les rules_ : Restrict deletions, Require linear history, Require a pull request before merging (mettre aux moins 2 personnes de l'équipe), Block force pushes. 
-3. Dans le terminal, créer un dossier qui sera eligible à _git_ via un `git.init`qui crée un dépot GIT dans le dossier où on se trouve.
+3. Dans le terminal, créer un dossier qui sera eligible à _git_ via un `git init`qui crée un dépot GIT dans le dossier où on se trouve.
 4. On travaille sur ses pages en faisant régulièrement 2 commandes :
     - `git add .`ajoute les fichiers en *stage*
     - `git commit -m "message"` qui nous permettrons de voir l'avancement des travaux sur la page lorsque celle ci sera sur **_origine_**
@@ -51,13 +51,14 @@ pour réaliser la page, nous utilisons VS Code
 5. enregistrer sur originie, commande `git push`
 
 ## autres choses à faire ?
-- il est important d'ecrire son README.md (attention l'orthographe et les majuscules sont importantes). Ce fichier va reprendre tout ce qu'il faut savoir sur tes pages. Le texte se fait en **_Markdown_**.
-- des choses à savoir comme : **_CTRL+%_** pour faire apparaitre le terminal dans Vscode, **_CTRL+C_** pour sortir d'une commande qui tourne en boucle, quand on veut trouver des infos sur le net taper comme mots clés *cheat sheet* ou *awesome*
+- il est important d'ecrire son README.md (bien écrire README en majuscule). Ce fichier va reprendre tout ce qu'il faut savoir sur tes pages. Le texte se fait en **_Markdown_**.
+- des choses à savoir comme : **_CTRL+%_** pour faire apparaitre le terminal dans Vscode, **_CTRL+C_** pour sortir d'une commande qui tourne en boucle.
+- quand on veut trouver des infos sur le net taper comme mots clés *cheat sheet* ou *awesome*
 
 
 
 *_les commandes à savoir :_*
-- `mkdir` crée un dossier
+- `mkdir` crée un dossier `rmdir` supprimer un dossier
 - `touch` crée un fichier
 - `git push` envoie les modifications local à la branche origine
 - `git pull` envoie les modifications de origine vers la branche local/main
