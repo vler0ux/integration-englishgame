@@ -7,7 +7,7 @@
 - [ ] creer une clé SSH
 - [ ] Réaliser la page sous VSCodecode
 - [ ] récupérer et partager son travail sur GitHub sans dommage
-- [ ] comprendre l'infrastructure de GitHub.
+- [ ] comprendre l'infrastructure de GitHub, ce qu'on appelle le **_git flow_** qui est de pourvoir ordonner ses branches de façons logiques et structuré.
 
 *A quoi il faut surtout penser :*
 - faire des commits réguliers
