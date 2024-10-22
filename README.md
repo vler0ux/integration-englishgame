@@ -91,9 +91,10 @@ On travaille sur ses pages en faisant régulièrement 2 commandes :
 ## *_Insérer une branche soeur_*
 La commande qu'il faut  `git checkout -b nom-de-la-nouvelle-branche` . A noter que pour <ins>changer de branche</ins>, on utilisera la même commande sans le flag **_-b_**
 
-1. Par précaution faire un **_push_** de la branche main (ou branche locale), pour la mettre à jour via la branche **_origine_**
-2. se mettre sur la branche soeur via un `git checkout branche-soeur`, puis faire un `git rebase` pour copier la branche soeur sur la branche locale
-3. **_ne pas oublier de se remettre sur la branche main_**, et faire un `git push` pour mettre à jour l'ensemble de la branche
+1. Par précaution faire un **_ git pull_** de la branche main (ou branche locale), pour la mettre à jour via la branche **_origine_**
+2. se mettre sur la branche soeur via un `git checkout branche-soeur`, puis faire un `git rebase` pour avoir la mise à jour de la branche locale
+3.Une fois le travail terminé, on fait un `git push` pour l'envoyer dans origine et entamer la PR.
+
 
 ## *Pull Request* et merger sa branche 
 La <ins>*_pull request_*</ins> permet de signaler qu'on a terminé les modificationss de sa branche et qu'<ins>on est prêt à l'intégrer dans la *branche main*</ins>.  
